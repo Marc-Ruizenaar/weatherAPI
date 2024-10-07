@@ -665,9 +665,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 // Modify your showResults function to accept the weather object
 function showResults(weatherData) {
-  console.log(weatherData);
+  console.log(weatherData); 
 
   const weatherTop = document.querySelector(".weatherTop");
+
+  weatherTop.innerHTML = "";
 
   // Left part of the weather
   const weatherLeft = document.createElement("div");
@@ -774,6 +776,8 @@ function showResults(weatherData) {
 
   // Lower part of the weather
   const next3Days = document.querySelector(".weatherDays");
+  next3Days.innerHTML = "";
+
 
   for (let i = 0; i <= 3; i++) {
     const day = weatherData.forecast[i];
@@ -1085,4 +1089,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle551e50111a2b09bccbe1.js.map
+//# sourceMappingURL=bundle8d0c4fa9b75404d74422.js.map
