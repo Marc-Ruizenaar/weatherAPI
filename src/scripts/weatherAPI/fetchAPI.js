@@ -2,7 +2,7 @@ import { showResults } from './showResults';
 import { weatherConstructor } from './weatherConstructor';
 
 export async function getWeatherApi(locationValueInput) {
-  const apiKey = "6e4e86b7f6ae4664a2785516240610";
+  const apiKey = "6e4e86b7f6ae4664a2785516240610"; // Free version of the api without payment connected
   const apiUrl = "http://api.weatherapi.com/v1/";
   const apiForcast = "/forecast.json"; // .xml is also possible
   const apiQ = "&q=" + locationValueInput;
