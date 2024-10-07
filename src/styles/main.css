@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../assets/font/HelveticaNeueMedium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../assets/font/HelveticaNeueRoman.otf");
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: white;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.gray {
+  color: #9aa0a6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  form {
+    position: relative;
+
+    button {
+      position: absolute;
+      right: 15px;
+      top: 52%;
+      transform: translate(0, -50%);
+    }
+
+    input#place {
+      border: none;
+      padding: 15px;
+      border-radius: 25px;
+      background-color: #4d5156;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: #949fc4;
+    }
+  }
+}
+
+.weatherDays {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  margin-top: 40px;
+
+  .active {
+    background-color: #303134;
+    border-radius: 10px;
+  }
+
+  #day {
+    padding: 10px;
+  }
+
+  div {
+    text-align: center;
+  }
+
+  #temp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+.weatherTop {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    color: #9e9e9e;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+  }
+
+  .left {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    .tempature {
+      font-size: 2.8rem;
+      line-height: 4rem;
+    }
+
+    button {
+      font-size: 1rem;
+      color: #9aa0a6;
+    }
+
+    .active {
+      color: white;
+    }
+
+    .weatherMeasurement {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+
+      span {
+        color: #9aa0a6;
+      }
+    }
+  }
+
+  .right{
+    text-align: end;
+  }
+}
