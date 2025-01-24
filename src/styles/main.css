@@ -57,9 +57,10 @@ header {
 
     input#place {
       border: none;
-      padding: 15px;
+      padding: 15px 25px;
       border-radius: 25px;
       background-color: #4d5156;
+      color: white;
     }
 
     svg {
@@ -158,4 +159,9 @@ header {
       flex-wrap: wrap;
     }
   }
+}
+
+#weatherTitle {
+  font-size: 2rem;
+  margin-bottom: 40px;
 }

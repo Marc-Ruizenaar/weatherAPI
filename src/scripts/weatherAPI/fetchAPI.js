@@ -4,7 +4,7 @@ import { weatherConstructor } from './weatherConstructor';
 export async function getWeatherApi(locationValueInput) {
   const apiKey = "6e4e86b7f6ae4664a2785516240610"; // Free version of the api without payment connected
   const apiUrl = "http://api.weatherapi.com/v1/";
-  const apiForcast = "/forecast.json"; // .xml is also possible
+  const apiForcast = "/forecast.json";
   const apiQ = "&q=" + locationValueInput;
   const apiDays = "&days=3"; // Free verion of the api only allows 3 days
   const fullApiRequest =

@@ -1,8 +1,16 @@
 // Modify your showResults function to accept the weather object
 export function showResults(weatherData) {
+
+
+  const titleSelector = document.querySelector("#weatherTitle");
+
   console.log(weatherData);
 
+  titleSelector.innerText = weatherData.location.location;
+
+
   const weatherTop = document.querySelector(".weatherTop");
+  weatherTop.innerHTML = "";
 
   // Left part of the weather
   const weatherLeft = document.createElement("div");
@@ -109,6 +117,7 @@ export function showResults(weatherData) {
 
   // Lower part of the weather
   const next3Days = document.querySelector(".weatherDays");
+  next3Days.innerHTML = "";
 
   for (let i = 0; i <= 3; i++) {
     const day = weatherData.forecast[i];
